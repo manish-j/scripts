@@ -5,6 +5,12 @@ import os
 #Dependencies:
 #sudo gem install terminal-notifier
 
+#Running in background:
+#python zebpay_bitcoin_price_notifier.py > /dev/null &
+
+#Output:
+#Generates on-screen notifications for Mac, for changes in Bitcoin prices on Zebpay portal.
+
 # The notifier function
 def notify(title, subtitle, message):
     t = '-title {!r}'.format(title)
