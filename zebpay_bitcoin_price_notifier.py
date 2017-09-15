@@ -34,13 +34,13 @@ if __name__ == '__main__':
                 new =  int(data['buy'])
                 if previous < new :
                                 print("RISE!")
-                                python_notifier.just_notify(previous,new)
+                                just_notify(previous,new)
                 if previous > new :
                                 print("FALL!")
-                                python_notifier.just_notify(previous,new)
+                                just_notify(previous,new)
                 if previous - new > 5000:
                                 print("BUY!")
-                                python_notifier.buy_notify(previous,new)
+                                buy_notify(previous,new)
     
                 print(new)
                 sleep(20)
