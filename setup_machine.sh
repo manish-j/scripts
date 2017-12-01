@@ -9,3 +9,5 @@ insall pip
 pip install pip -U
 pip install youtube-dl -U
 install nmap
+install axel
+install aria2
