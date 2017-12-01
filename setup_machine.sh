@@ -1,13 +1,14 @@
-sudo -s
-cat alias update='apt-get update ' >> ~/.bashrc
-cat alias install='apt-get install -y ' >> ~/.bashrc
-cat alias pinstall='pip install ' >> ~/.bashrc
-source ~/.bashrc
+#!/bin/bash
+shopt -s expand_aliases
+alias update='sudo apt-get update '
+alias install='sudo apt-get install -y '
+alias pinstall='sudo pip install '
 update
 install youtube-dl
-insall pip
-pip install pip -U
-pip install youtube-dl -U
+install python-pip
+install python-dev
+pinstall pip -U
+pinstall youtube-dl -U
 install nmap
 install axel
 install aria2
